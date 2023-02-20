@@ -3,10 +3,10 @@ import './App.css';
 // import {Rating} from "./Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
 // import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
-// import {UnconrolledRating} from "./UncontrolledRating/UncontrolledRating";
+import {UnconrolledRating} from "./UncontrolledRating/UncontrolledRating";
 import {useState} from "react";
 // import type {RatingValueType} from "./Rating/Rating";
-// import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff";
 // import {Select} from "./components/Select/Select";
 
 // function hello() {
@@ -35,7 +35,7 @@ function App(props: any) {
         {/*<PageTitle title={'My friends'}/>*/}
         {/*Article 1*/}
         {/*<Accordion titleValue = {'Menu'} collapsed = {accordionCollapsed}*/}
-                   onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>
+        {/*           onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
         {/*<Accordion titleValue = {'User'} collapsed={false}/>*/}
         {/*<UncontrolledAccordion titleValue = {'Menu'}/>*/}
         {/*<UncontrolledAccordion titleValue = {'User'}/>*/}
@@ -45,9 +45,9 @@ function App(props: any) {
         {/*<Rating value={3}/>*/}
         {/*<Rating value={4}/>*/}
         {/*<Rating value={5}/>*/}
-        {/*<UnconrolledRating />*/}
+        <UnconrolledRating />
         {/*<UncontrolledOnOff/ /// ниже улучшение, где компонента нас будет уведомлять true/false />*/}
-        {/*<UncontrolledOnOff onChange = {setSwitchOn}/> {switchOn.toString()}*/}
+        <UncontrolledOnOff onChange = {setSwitchOn}/> {switchOn.toString()}
 
       </div>
   );
