@@ -2,7 +2,7 @@ import './App.css';
 // import {Accordion} from "./components/Accordion/Accordion";
 // import {Rating} from "./Rating/Rating";
 import {OnOff} from "./components/OnOff/OnOff";
-// import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion";
 import {UnconrolledRating} from "./UncontrolledRating/UncontrolledRating";
 import {useState} from "react";
 // import type {RatingValueType} from "./Rating/Rating";
@@ -37,8 +37,8 @@ function App(props: any) {
         {/*<Accordion titleValue = {'Menu'} collapsed = {accordionCollapsed}*/}
         {/*           onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
         {/*<Accordion titleValue = {'User'} collapsed={false}/>*/}
-        {/*<UncontrolledAccordion titleValue = {'Menu'}/>*/}
-        {/*<UncontrolledAccordion titleValue = {'User'}/>*/}
+        <UncontrolledAccordion titleValue = {'Menu'}/>
+        <UncontrolledAccordion titleValue = {'User'}/>
         {/*<Rating value={0}/>*/}
         {/*<Rating value={1}/>*/}
         {/*<Rating value={2}/>*/}
