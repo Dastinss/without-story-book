@@ -8,6 +8,7 @@ import { useState } from "react";
 // import type {RatingValueType} from "./Rating/Rating";
 import { UncontrolledOnOff } from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import { ReactMemo } from "./components/ReactMemo";
+import { UseMemo } from "./components/UseMemo";
 // import {Select} from "./components/Select/Select";
 
 // function hello() {
@@ -28,7 +29,7 @@ function App( props: any ) {
             {/*<Select />*/}
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
 
-            <OnOff on={switchOn} onChange={setSwitchOn}/>
+
             {/*<OnOff/>*/}
             {/*<OnOff/>*/}
             {/*<OnOff/>*/}
@@ -38,18 +39,21 @@ function App( props: any ) {
             {/*<Accordion titleValue = {'Menu'} collapsed = {accordionCollapsed}*/}
             {/*           onChange={() => {setAccordionCollapsed(!accordionCollapsed)}}/>*/}
             {/*<Accordion titleValue = {'User'} collapsed={false}/>*/}
-            <UncontrolledAccordion titleValue={'Menu'}/>
-            <UncontrolledAccordion titleValue={'User'}/>
             {/*<Rating value={0}/>*/}
             {/*<Rating value={1}/>*/}
             {/*<Rating value={2}/>*/}
             {/*<Rating value={3}/>*/}
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
-            <UnconrolledRating/>
             {/*<UncontrolledOnOff/ /// ниже улучшение, где компонента нас будет уведомлять true/false />*/}
+
+            <OnOff on={switchOn} onChange={setSwitchOn}/>
+            <UncontrolledAccordion titleValue={'Menu'}/>
+            <UncontrolledAccordion titleValue={'User'}/>
             <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
+            <UnconrolledRating/>
             <ReactMemo/>
+            <UseMemo/>
         </div>
     );
 }
