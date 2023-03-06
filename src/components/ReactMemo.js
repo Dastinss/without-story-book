@@ -15,10 +15,10 @@ const Users = React.memo (UsersSecret); //єто контейнерная ком
 
 export const ReactMemo = () => {
     const [counter, setCounter] = useState( 0 )
-    const [user, setUser] = useState( ['Serg', 'Ann', 'Mike'] )
+    const [users, setUser] = useState( ['Serg', 'Ann', 'Mike'] )
 
     const addUser = () => {
-        const newUsers = [...user, 'Sveta' + new Date().getDate()]
+        const newUsers = [...users, 'Sveta' + new Date().getDate()]
         setUser(newUsers);
     }
 
@@ -28,6 +28,6 @@ export const ReactMemo = () => {
         <button onClick={() => {setCounter(counter+1)}}> + </button>
         <button onClick={addUser}> add user </button>
         <NewMessagesCounter count={counter}/>
-        <Users users={user}/>
+        <Users users={users}/>
     </>
 }

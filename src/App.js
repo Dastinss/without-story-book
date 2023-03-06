@@ -9,6 +9,7 @@ import { useState } from "react";
 import { UncontrolledOnOff } from "./components/UncontrolledOnOff/UncontrolledOnOff";
 import { ReactMemo } from "./components/ReactMemo";
 import { UseMemo } from "./components/UseMemo";
+import { CityFilterMemo } from "./components/CityFilterMemo";
 // import {Select} from "./components/Select/Select";
 
 // function hello() {
@@ -46,6 +47,7 @@ function App( props: any ) {
             {/*<Rating value={4}/>*/}
             {/*<Rating value={5}/>*/}
             {/*<UncontrolledOnOff/ /// ниже улучшение, где компонента нас будет уведомлять true/false />*/}
+            {/*<CityFilterMemo/>*/}
 
             <OnOff on={switchOn} onChange={setSwitchOn}/>
             <UncontrolledAccordion titleValue={'Menu'}/>
@@ -54,6 +56,7 @@ function App( props: any ) {
             <UnconrolledRating/>
             <ReactMemo/>
             <UseMemo/>
+
         </div>
     );
 }
