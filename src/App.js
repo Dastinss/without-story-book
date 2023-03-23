@@ -10,6 +10,8 @@ import { UncontrolledOnOff } from "./components/UncontrolledOnOff/UncontrolledOn
 import { ReactMemo } from "./components/ReactMemo";
 import { UseMemo } from "./components/UseMemo";
 import { CityFilterMemo } from "./components/CityFilterMemo";
+import { UseStateCool } from "./components/UseStateCool";
+import { UseEffect } from "./components/UseEffect";
 // import {Select} from "./components/Select/Select";
 
 // function hello() {
@@ -49,13 +51,15 @@ function App( props: any ) {
             {/*<UncontrolledOnOff/ /// ниже улучшение, где компонента нас будет уведомлять true/false />*/}
             {/*<CityFilterMemo/>*/}
 
-            <OnOff on={switchOn} onChange={setSwitchOn}/>
-            <UncontrolledAccordion titleValue={'Menu'}/>
-            <UncontrolledAccordion titleValue={'User'}/>
-            <UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}
-            <UnconrolledRating/>
-            <ReactMemo/>
-            <UseMemo/>
+            {/*<OnOff on={switchOn} onChange={setSwitchOn}/>*/}
+            {/*<UncontrolledAccordion titleValue={'Menu'}/>*/}
+            {/*<UncontrolledAccordion titleValue={'User'}/>*/}
+            {/*<UncontrolledOnOff onChange={setSwitchOn}/> {switchOn.toString()}*/}
+            {/*<UnconrolledRating/>*/}
+            {/*<ReactMemo/>*/}
+            {/*<UseMemo/>*/}
+            {/*<UseStateCool/>*/}
+            <UseEffect/>
 
         </div>
     );
