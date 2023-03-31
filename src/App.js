@@ -12,6 +12,7 @@ import { UseMemo } from "./components/UseMemo";
 import { CityFilterMemo } from "./components/CityFilterMemo";
 import { UseStateCool } from "./components/UseStateCool";
 import { UseEffect } from "./components/UseEffect";
+import { Clock } from "./components/Clock/Clock";
 // import {Select} from "./components/Select/Select";
 
 // function hello() {
@@ -60,6 +61,7 @@ function App( props: any ) {
             {/*<UseMemo/>*/}
             {/*<UseStateCool/>*/}
             <UseEffect/>
+            <Clock/>
 
         </div>
     );
