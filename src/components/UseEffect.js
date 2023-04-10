@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 export const UseEffect = () => {
     return <>
         <div>
-            <SimpleExample/>
+            {/*<SimpleExample/>*/}
         </div>
         <div>
-            <SetTimeoutExample/>
+            {/*<SetTimeoutExample/>*/}
         </div>
         <div>
             {/*<SetClock/>*/}
