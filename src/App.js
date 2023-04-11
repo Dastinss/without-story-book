@@ -22,7 +22,6 @@ import { Clock } from "./components/Clock/Clock";
 // hello();
 
 function App( props: any ) {
-    console.log( 'App rendering' )
 
     // let [ratingValue, setRatingValue] = useState(4);
     let [accordionCollapsed, setAccordionCollapsed] = useState( false )
@@ -61,7 +60,7 @@ function App( props: any ) {
             {/*<UseMemo/>*/}
             {/*<UseStateCool/>*/}
             <UseEffect/>
-            <Clock/>
+            {/*<Clock/>*/}
 
         </div>
     );

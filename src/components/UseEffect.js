@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from "../stories/Button";
 
 export const UseEffect = () => {
     return <>
@@ -10,6 +11,9 @@ export const UseEffect = () => {
         </div>
         <div>
             {/*<SetClock/>*/}
+        </div>
+        <div>
+            <ResetEffectExample/>
         </div>
     </>
 }
@@ -76,6 +80,25 @@ export const SetTimeoutExample = () => {
 
     return <>
         Hello, counter: {counter} - fake {fake}
+    </>
+}
+
+export const ResetEffectExample = () => {
+    const [counter, setCounter] = useState( 1 )
+
+    console.log( 'Component rendered' )
+
+    useEffect( () => { // при пустом массиве зависимостей [] эффект происходить не будет
+        console.log('Effect occurred' + counter)
+        return () => { // отменяем запрос, отписываемся от него, чтобы ф-ция переставала работать когда мы из нее уходим
+            console.log('RESET EFFECT')
+        }
+    }, [counter])
+
+    const increase = () => { setCounter(counter+1)}
+
+    return <>
+        Hello, counter: {counter} <button onClick={increase}> + </button>
     </>
 }
 
